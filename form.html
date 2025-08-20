@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Collection Form</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="app.py">
+</head>
+<body>
+    <h1>Submit Your Information</h1>
+    <form action="/submit" method="POST">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Feedback:</label><br>
+        <textarea name="feedback" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
