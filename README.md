@@ -1,15 +1,20 @@
 # Nexford-university-BAN6420-Final-Project-Flask-Healthcare-Application
 
 ##  How this file works
-##  User Feedback & Expense Tracker Web App
+
+## The flaskapp.py and the flask.html
+The flaskapp.py and the flask.html files contains code for the flask app as required in question one.
 
 This is a simple Flask web application that collects user feedback and expense data via a form, stores it in a MongoDB database, and provides a route to view the submitted data.
+
+## The mongo.py and the mongo.html 
+Store user details, including Age, Gender, Total Income, and Expenses, in MongoDB.
+Use checkboxes for expense categories (utilities, entertainment, school fees, shopping, healthcare), each with a corresponding textbox to insert amounts spent.
 
 ## Features
 
 - Submit feedback and expenses via a web form
 - Store submissions in MongoDB Atlas
-- Simple thank-you page after submission
 
 ## Technologies Used
 
@@ -18,6 +23,11 @@ This is a simple Flask web application that collects user feedback and expense d
 - **PyMongo** – MongoDB driver for Python
 - **HTML** – For the form interface (`form.html`)
 
+- 
+
 ## The Final Project -- Flask Healthcare Application.ipynb file.
-The final Project file contains the code that took care of Data Processing with Python and data visualization
-## Host the Flaskapp on AWS.txt file contains steps on how to host the application on AWS.
+The final Project file contains the code for the Data Processing and data visualization with Python
+
+## Host the Flaskapp on AWS.txt file 
+
+This file contains steps on how to host the application on AWS.
