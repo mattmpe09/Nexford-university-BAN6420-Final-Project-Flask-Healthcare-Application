@@ -1,0 +1,51 @@
+<form id="userForm">
+    <h1>Data Storage Session</h1>
+    <label>Age: <input type="number" name="age" required></label><br>
+    <label>Gender:
+      <select name="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+    </label><br>
+    <label>Total Income: <input type="number" name="income" required></label><br>
+  
+    <h3>Expenses:</h3>
+    <label><input type="checkbox" name="utilities"> Utilities</label>
+    <input type="number" name="utilities_amount"><br>
+  
+    <label><input type="checkbox" name="entertainment"> Entertainment</label>
+    <input type="number" name="entertainment_amount"><br>
+  
+    <label><input type="checkbox" name="school_fees"> School Fees</label>
+    <input type="number" name="school_fees_amount"><br>
+  
+    <label><input type="checkbox" name="shopping"> Shopping</label>
+    <input type="number" name="shopping_amount"><br>
+  
+    <label><input type="checkbox" name="healthcare"> Healthcare</label>
+    <input type="number" name="healthcare_amount"><br>
+  
+    <button type="submit">Submit</button>
+  </form>
+  
+  <script>
+  document.getElementById("userForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = {};
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+  
+    const response = await fetch("/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+  
+    const result = await response.json();
+    alert(result.message);
+  });
+  </script>
+  
