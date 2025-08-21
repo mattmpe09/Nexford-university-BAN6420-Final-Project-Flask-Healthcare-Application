@@ -4,12 +4,11 @@
 
 ## The flaskapp.py and the flask.html
 The flaskapp.py and the flask.html files contains code for the flask app as required in question one.
-
-This is a simple Flask web application that collects user feedback and expense data via a form, stores it in a MongoDB database, and provides a route to view the submitted data.
+This simple flask web app allow users to enter some information.
 
 ## The mongo.py and the mongo.html 
-Store user details, including Age, Gender, Total Income, and Expenses, in MongoDB.
-Use checkboxes for expense categories (utilities, entertainment, school fees, shopping, healthcare), each with a corresponding textbox to insert amounts spent.
+This code Stores user details, including Age, Gender, Total Income, and Expenses, in MongoDB.
+It Uses checkboxes for expense categories (utilities, entertainment, school fees, shopping, healthcare), each with a corresponding textbox to insert amounts spent.
 
 ## Features
 
